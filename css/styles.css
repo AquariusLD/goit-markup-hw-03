@@ -155,7 +155,7 @@ section {
   text-transform: uppercase;
 }
 
-.header-item {
+.header-link {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -425,6 +425,9 @@ section {
   font-weight: 400;
   line-height: calc(24 / 16);
   letter-spacing: 0.32px;
+}
+
+.portfolio-apps {
   margin-bottom: 8px;
 }
 
