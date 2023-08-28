@@ -105,9 +105,9 @@ section {
 
 .page-header-container {
   display: flex;
-  width: 1752px;
+  width: 1158px;
   height: 72px;
-  padding: 24px 156px;
+  padding: 0 15px 0 15px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -153,6 +153,11 @@ section {
   line-height: calc(21 / 18);
   letter-spacing: 0.54px;
   text-transform: uppercase;
+}
+
+.header-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .page-header {
@@ -227,6 +232,7 @@ section {
   height: 56px;
   border: none;
   border-radius: 4px;
+  display: block;
 }
 
 .button:hover,
@@ -237,6 +243,16 @@ section {
 /* Properties */
 
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-properties {
@@ -409,6 +425,7 @@ section {
   font-weight: 400;
   line-height: calc(24 / 16);
   letter-spacing: 0.32px;
+  margin-bottom: 8px;
 }
 
 /* Footer */
@@ -422,6 +439,8 @@ section {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-text-studio {
