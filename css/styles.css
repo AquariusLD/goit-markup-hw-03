@@ -1,5 +1,16 @@
-* {
+/* * {
   outline: 1px solid;
+} */
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+  color: #434455;
+  margin: 0 auto;
+  width: 1440px;
+  height: 3300px;
+  background: #fff;
 }
 
 h1,
@@ -13,8 +24,7 @@ p {
   margin-bottom: 0;
 }
 
-ul,
-ol {
+ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -31,16 +41,12 @@ img {
 
 .container {
   width: 1158px;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.container {
-  width: 1158px;
   margin: 0 auto;
   padding: 0 15px 0 15px;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 .link body {
@@ -54,12 +60,6 @@ img {
 }
 
 h1 {
-  text-align: center;
-  color: #fff;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 1.12px;
 }
 
 h2 {
@@ -88,11 +88,6 @@ a {
 
 footer {
   margin: 0;
-}
-
-section {
-  max-width: 100%;
-  padding: 120px 0;
 }
 
 /* Header */
@@ -204,35 +199,51 @@ section {
 /* Solution */
 
 .section-solution {
-  background: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  text-align: center;
+  background-color: #2e2f42;
+  display: block;
 }
 
 .section-solution-container {
-  width: 1440px;
+  width: 1158px;
   height: 600px;
   flex-shrink: 0;
+  text-align: center;
+  padding-left: 316px;
+  padding-right: 316px;
+  padding-top: 188px;
+  padding-bottom: 272px;
 }
 
 .solution {
-  max-width: 496px;
+  width: 496px;
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1.12px;
 }
 
 .button {
-  cursor: pointer;
-  background: #4d5ae5;
-  color: #fff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.64px;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  border-radius: 4px;
   display: block;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  width: 196px;
+  height: 56px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+  min-width: 169px;
+  margin-top: 48px;
 }
 
 .button:hover,
@@ -256,13 +267,13 @@ section {
 }
 
 .section-properties {
-  background-color: #f4f4fd;
   padding-top: 120px;
   padding-bottom: 120px;
+  background: #fff;
 }
 
 .section-properties-container {
-  width: 1440px;
+  width: 1158px;
   height: 104px;
   flex-shrink: 0;
 }
@@ -308,14 +319,13 @@ section {
 /* Team */
 
 .team-page {
-  background-color: #f4f4fd;
+  background: #f4f4fd;
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .page-team-container {
-  width: 1440px;
-  height: 732px;
+  width: 1158px;
   flex-shrink: 0;
 }
 
@@ -351,34 +361,47 @@ section {
 }
 
 .team-item {
-  background-color: #ffffff;
+  display: inline-flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   width: calc((100% - 24px * 3) / 4);
 }
 .team-name {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: flex;
+  width: 232px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 32px 0;
 }
 
 .team-specialist {
   color: #2e2f42;
   text-align: center;
-  margin-bottom: 8px;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-size: 20px;
+  font-style: normal;
   font-weight: 500;
-  line-height: calc(24 / 20);
+  line-height: 24px;
   letter-spacing: 0.4px;
 }
 
 .team-list {
   color: #434455;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: calc(24 / 16);
+  line-height: 24px;
   letter-spacing: 0.32px;
 }
 
@@ -387,17 +410,20 @@ section {
 .portfolio-section {
   padding-top: 120px;
   padding-bottom: 120px;
+  background: #fff;
 }
 
 .our-portfolio {
-  color: #2e2f42;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 72px;
-  font-size: 20px;
+  color: var(--navyblue, #2e2f42);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  padding-bottom: 72px;
 }
 
 .menu-portfolio-container {
@@ -411,10 +437,13 @@ section {
 }
 
 .portfolio-name {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-  margin-bottom: 8px;
+  display: flex;
+  padding: 32px 16px 32px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
 }
 
 .portfolio-list {
@@ -468,4 +497,6 @@ section {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  width: 264px;
+  display: flex;
 }
