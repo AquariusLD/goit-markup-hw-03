@@ -8,8 +8,6 @@ body {
   background: #fff;
   color: #434455;
   margin: 0 auto;
-  width: 1440px;
-  height: 3300px;
   background: #fff;
 }
 
@@ -90,8 +88,12 @@ footer {
 /* Header */
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  display: flex;
+  height: 72px;
+  padding: 24px 156px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -108,8 +110,7 @@ footer {
 .page-navigation {
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 455px;
+  width: 261px;
   justify-content: space-between;
 }
 
@@ -132,8 +133,7 @@ footer {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   align-items: center;
-  padding-right: 76px;
-  margin-right: 76px;
+  padding-right: 188px;
 }
 
 .header-logo-text-studio {
